@@ -15,6 +15,8 @@ In the Entra application registration:
 
 Record the application ID and the **Object ID of the enterprise application** (service principal), not the app registration object ID.
 
+![Office 365 Exchange Online SMTP.SendAsApp application permission](../assets/images/lab-05-smtp-sendasapp-permission.png)
+
 ## 2. Configure Exchange Online
 
 Install the module if necessary:
@@ -51,4 +53,3 @@ Get-CASMailbox -Identity 'sender@contoso.com' |
 6. Finish setup and set the account as default if it is used for background processes.
 
 Edit the account afterward to review the stored settings and send a test message.
-

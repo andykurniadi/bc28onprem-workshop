@@ -36,7 +36,8 @@ Under **API permissions**, add Microsoft Graph **Delegated permissions**:
 
 Grant tenant consent when your organization requires administrator approval.
 
+![Microsoft Graph delegated permissions list](../assets/images/lab-02-graph-delegated-permissions.png)
+
 ## Record local configuration
 
 Copy `templates\app-registration-values.example.json` to a local ignored values file and add the tenant ID, client ID, secret location, public URL, and redirect URI. Do not commit the populated file.
-

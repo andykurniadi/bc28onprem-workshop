@@ -29,5 +29,6 @@ Copy the relevant file in `templates\` before use and populate it locally. Do no
 - `docs\` — lab instructions and troubleshooting.
 - `scripts\` — optional parameterized PowerShell helpers.
 - `templates\` — safe example configuration files.
-- `assets\screenshots\` — screenshots extracted from the source workshop document.
+- `assets\images\` — curated, sanitized screenshots that support selected UI steps.
 
+The original screenshot extraction remains local and ignored. Published images are limited to redacted or tenant-neutral views and never replace the written instructions.

@@ -27,6 +27,10 @@ In IIS Manager, select the site hosting the `BC280` web client:
 - Set host name to `win22-bc28`.
 - Select the certificate created in step 1.
 
+![IIS HTTPS binding dialog with environment-specific details redacted](../assets/images/lab-01-iis-https-binding.png)
+
+The screenshot is a sanitized example. Enter the hostname and certificate that belong to your own environment.
+
 ## 4. Set the public web URL
 
 Run from the Business Central Administration Shell:
@@ -50,4 +54,3 @@ Browse to the configured HTTPS URL and confirm the browser reports a trusted cer
 ```powershell
 Get-NAVServerConfiguration -ServerInstance BC280 -KeyName PublicWebBaseUrl
 ```
-

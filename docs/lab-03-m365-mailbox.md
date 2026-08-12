@@ -19,5 +19,6 @@ Configure a Microsoft 365 email account in Business Central using the registrati
 6. Enter the email address and account name, then finish setup.
 7. Send a test email.
 
-If the verification fails with a redirect error, compare the configured `PublicWebBaseUrl`, IIS binding hostname and port, and Entra redirect URI character-for-character.
+![Business Central Set Up Email account type selection](../assets/images/lab-03-email-account-types.png)
 
+If the verification fails with a redirect error, compare the configured `PublicWebBaseUrl`, IIS binding hostname and port, and Entra redirect URI character-for-character.
