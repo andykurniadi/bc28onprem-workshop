@@ -1,0 +1,8 @@
+{
+  "tenantId": "00000000-0000-0000-0000-000000000000",
+  "clientId": "00000000-0000-0000-0000-000000000000",
+  "clientSecret": "Store outside the repository",
+  "publicWebBaseUrl": "https://win22-bc28:443/BC280/",
+  "redirectUri": "https://win22-bc28:443/BC280/OAuthLanding.htm"
+}
+

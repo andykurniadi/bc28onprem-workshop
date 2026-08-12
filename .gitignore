@@ -1,0 +1,31 @@
+# Local workshop configuration and secrets
+.env
+.env.*
+!*.example.env
+local.settings.json
+*-values.json
+!*-values.example.json
+
+# Certificates and private keys
+*.pfx
+*.p12
+*.pem
+*.key
+*.cer
+*.crt
+
+# Original workshop export
+MS BC28 workshop.docx
+
+# Extracted screenshots can contain tenant identifiers or other local data.
+assets/screenshots/*.png
+
+# PowerShell secrets and user-specific files
+*.clixml
+*.pscredential
+
+# Build and editor files
+bin/
+obj/
+.vs/
+.vscode/
