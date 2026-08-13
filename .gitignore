@@ -24,6 +24,11 @@ assets/screenshots/*.png
 *.clixml
 *.pscredential
 
+# AL project generated files and local publish configuration
+al-project/.alpackages/
+al-project/*.app
+al-project/.vscode/launch.json
+
 # Build and editor files
 bin/
 obj/
