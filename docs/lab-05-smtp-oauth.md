@@ -16,6 +16,7 @@ In the Entra application registration:
 Record the application ID and the **Object ID of the enterprise application** (service principal), not the app registration object ID.
 
 ![Office 365 Exchange Online SMTP.SendAsApp application permission](../assets/images/lab-05-smtp-sendasapp-permission.png)
+![Enterprise application view with application and object IDs redacted](../assets/images/lab-05-enterprise-app-ids-redacted.png)
 
 ## 2. Configure Exchange Online
 
@@ -51,5 +52,10 @@ Get-CASMailbox -Identity 'sender@contoso.com' |
 4. Select **OAuth 2.0** authentication and enable custom app registration.
 5. Enter the application registration details, authenticate, and grant consent.
 6. Finish setup and set the account as default if it is used for background processes.
+
+![SMTP account fields with account and sender details redacted](../assets/images/lab-05-smtp-settings-redacted.png)
+![Custom app registration toggle for SMTP OAuth setup](../assets/images/lab-05-smtp-custom-app-toggle.png)
+![SMTP OAuth input page with client, secret, and tenant fields redacted](../assets/images/lab-05-smtp-oauth-input-redacted.png)
+![SMTP setup completion page with mailbox details redacted](../assets/images/lab-05-smtp-summary-redacted.png)
 
 Edit the account afterward to review the stored settings and send a test message.

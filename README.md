@@ -36,3 +36,5 @@ Copy the relevant file in `templates\` before use and populate it locally. Do no
 - `assets\images\` — curated, sanitized screenshots that support selected UI steps.
 
 The original screenshot extraction remains local and ignored. Published images are limited to redacted or tenant-neutral views and never replace the written instructions.
+
+For sanitized screenshots, tenant-specific identifiers and secret-related fields are masked and replaced with placeholder values such as `XXXX-XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX`.

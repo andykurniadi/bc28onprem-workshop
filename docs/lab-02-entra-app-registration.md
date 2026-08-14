@@ -14,6 +14,10 @@ In the Microsoft Entra admin center:
 4. Create the registration and record the **Application (client) ID** and **Directory (tenant) ID**.
 5. Under **Certificates & secrets**, create a client secret. Copy its **Value** immediately and store it in an approved secret store; it cannot be retrieved later.
 
+![Application overview with client, object, and tenant IDs redacted](../assets/images/lab-02-app-overview-redacted.png)
+
+![Client secret page with secret value and secret ID redacted](../assets/images/lab-02-client-secret-redacted.png)
+
 ## Configure the redirect URI
 
 Under **Authentication**, add a **Web** redirect URI:
