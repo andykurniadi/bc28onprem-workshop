@@ -15,6 +15,8 @@ In Exchange admin center:
 3. Add the role `Public Folders`.
 4. Add the account used by Business Central logging as a member.
 
+![Admin roles - Public Folder Management role group](../assets/images/lab-07-admin-roles-public-folder-mgmt.png)
+
 ## 2. Create public-folder mailbox and folders
 
 1. Go to **Recipients > Public folders > Public folder mailboxes** and create a mailbox named `Public MailBox`.
@@ -24,6 +26,14 @@ In Exchange admin center:
    - `\Email Logging\Storage\`
 
 Set the logging account as owner on `Queue` and `Storage`.
+
+![Add a public folder dialog](../assets/images/lab-07-add-public-folder.png)
+
+![Add a public folder - name and options](../assets/images/lab-07-add-public-folder-detail.png)
+
+![Add public folder permission - owner access](../assets/images/lab-07-public-folder-permission.png)
+
+![Queue public folder general properties](../assets/images/lab-07-queue-folder-general.png)
 
 ## 3. Mail-enable Queue and set permissions
 
@@ -51,6 +61,12 @@ Get-PublicFolderClientPermission "\Email Logging\Queue"
 ## 4. Create BCC transport rules to Queue
 
 Create inbound and outbound Exchange transport rules and BCC to the Queue public folder SMTP address.
+
+![Inbound BCC transport rule to the Queue public folder](../assets/images/lab-07-inbound-bcc-rule.png)
+
+![Outbound BCC transport rule to the Queue public folder](../assets/images/lab-07-outbound-bcc-rule.png)
+
+![Test email delivered to the Queue public folder in Outlook](../assets/images/lab-07-outlook-sender.png)
 
 ## 5. Configure Business Central email logging
 

@@ -14,6 +14,8 @@ In Exchange admin center:
 
 Use a dedicated mailbox for logging. Do not reuse an existing user mailbox.
 
+![Shared mailbox created in Exchange admin center](../assets/images/lab-06-shared-mailbox-created.png)
+
 ## 2. Grant access to the logging account
 
 On the shared mailbox:
@@ -22,6 +24,8 @@ On the shared mailbox:
 2. Add the account used by Business Central email logging under **Read and manage (Full Access)**.
 
 Use a dedicated service-style account where possible.
+
+![Shared mailbox delegation - Full Access permission](../assets/images/lab-06-shared-mailbox-delegation.png)
 
 ## 3. Create BCC transport rules
 
@@ -33,6 +37,10 @@ In Exchange admin center under **Mail flow > Rules**, create inbound and outboun
 
 Enable both rules and verify they are active.
 
+![Inbound BCC transport rule to the shared mailbox](../assets/images/lab-06-inbound-bcc-rule.png)
+
+![Outbound BCC transport rule to the shared mailbox](../assets/images/lab-06-outbound-bcc-rule.png)
+
 ## 4. Configure Entra permissions for logging
 
 On the Business Central integration app registration, add delegated permission:
@@ -40,6 +48,8 @@ On the Business Central integration app registration, add delegated permission:
 - `Mail.ReadWrite.Shared`
 
 Grant admin consent as required by tenant policy.
+
+![Mail.ReadWrite.Shared delegated permission granted](../assets/images/lab-06-graph-readwrite-shared-permission.png)
 
 ## 5. Configure Business Central email logging
 
@@ -51,6 +61,14 @@ In Business Central:
 4. Sign in with the logging account and complete consent.
 
 After setup, verify the email logging job queue entries are created.
+
+![Set up email logging - shared mailbox email field](../assets/images/lab-06-shared-mailbox-email-field.png)
+
+![Application Client ID and Secret dialog (redacted)](../assets/images/lab-06-email-logging-client-id-secret.png)
+
+![Manual setup completed toggle](../assets/images/lab-06-email-logging-manual-setup.png)
+
+![Email logging job queue created confirmation](../assets/images/lab-06-email-logging-job-queue-created.png)
 
 ## Validate
 
