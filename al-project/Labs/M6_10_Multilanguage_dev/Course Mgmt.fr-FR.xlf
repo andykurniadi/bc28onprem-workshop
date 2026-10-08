@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd" target-language="fr-FR">
+  <file datatype="xml" source-language="en-US" target-language="fr-FR" original="Course Mgmt">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 960736685 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Property Caption</note>
+        <target state="translated">Cours</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 1090351696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Active</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Active - Property Caption</note>
+        <target state="translated">Actif</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Code - Property Caption</note>
+        <target state="translated">Code</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Description - Property Caption</note>
+        <target state="translated">Description</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 1623047485 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Difficulty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Difficulty - Property Caption</note>
+        <target state="translated">Difficulté</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 1637095154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Duration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Duration - Property Caption</note>
+        <target state="translated">Durée</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 2825077820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instructor Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Instructor Code - Property Caption</note>
+        <target state="translated">Code instructeur</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 1054423462 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instructor Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Instructor Name - Property Caption</note>
+        <target state="translated">Nom instructeur</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Name - Property Caption</note>
+        <target state="translated">Nom</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 1353320629 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Passing Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Passing Rate - Property Caption</note>
+        <target state="translated">Taux de réussite</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 3635338911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Price - Property Caption</note>
+        <target state="translated">Prix</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Type - Property Caption</note>
+        <target state="translated">Type</target></trans-unit>
+        <trans-unit id="Table 960736685 - Field 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instructor Led,e-Learning,Remote Training</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CRONUS Course - Field Type - Property OptionCaption</note>
+        <target state="translated">Formation dirigée par un instructeur, e-Learning, Formation à distance</target></trans-unit>
+        <trans-unit id="Table 3312848521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Overview</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Customer Overview - Property Caption</note>
+        <target state="translated">Aperçu client</target></trans-unit>
+        <trans-unit id="Table 3312848521 - Field 636392376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Customer Overview - Field Amount - Property Caption</note>
+        <target state="translated">Montant</target></trans-unit>
+        <trans-unit id="Table 3312848521 - Field 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Customer Overview - Field Customer Name - Property Caption</note>
+        <target state="translated">Nom du client</target></trans-unit>
+        <trans-unit id="Table 3312848521 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Customer Overview - Field Customer No. - Property Caption</note>
+        <target state="translated">N° client</target></trans-unit>
+        <trans-unit id="Table 3312848521 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Customer Overview - Field Entry No. - Property Caption</note>
+        <target state="translated">N° d'entrée</target></trans-unit>
+        <trans-unit id="Table 3312848521 - Field 2578636657 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LastRunDate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Customer Overview - Field LastRunDate - Property Caption</note>
+        <target state="translated">Date de dernière exécution</target></trans-unit>
+        <trans-unit id="Table 3312848521 - Field 2720485332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Customer Overview - Field Source Code - Property Caption</note>
+        <target state="translated">Code source</target></trans-unit>
+        <trans-unit id="Page 459232939 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Armstrong Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Armstrong Card - Property Caption</note>
+        <target state="translated">Fiche Armstrong</target></trans-unit>
+        <trans-unit id="Page 1873061777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CRONUS Course Card - Property Caption</note>
+        <target state="translated">Fiche cours</target></trans-unit>
+        <trans-unit id="Page 1873061777 - Control 318613646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CRONUS Course Card - Control Details - Property Caption</note>
+        <target state="translated">Détails</target></trans-unit>
+        <trans-unit id="Page 1873061777 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CRONUS Course Card - Control General - Property Caption</note>
+        <target state="translated">Général</target></trans-unit>
+        <trans-unit id="Page 1873061777 - Action 348912950 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the Resource Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CRONUS Course Card - Action Resource - Property ToolTip</note>
+        <target state="translated">Ouvrir la fiche ressource</target></trans-unit>
+        <trans-unit id="Page 1873061777 - Action 348912950 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resource</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CRONUS Course Card - Action Resource - Property Caption</note>
+        <target state="translated">Ressource</target></trans-unit>
+        <trans-unit id="Page 290544707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CRONUS Course List - Property Caption</note>
+        <target state="translated">Liste des cours</target></trans-unit>
+        <trans-unit id="Page 290544707 - Property 3863440606" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course, Training</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CRONUS Course List - Property AdditionalSearchTerms</note>
+        <target state="translated">Cours, Formation</target></trans-unit>
+        <trans-unit id="Page 1996007807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Overview List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Overview List - Property Caption</note>
+        <target state="translated">Liste d'aperçu client</target></trans-unit>
+        <trans-unit id="Page 1996007807 - Control 636392376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Amount field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Overview List - Control Amount - Property ToolTip</note>
+        <target state="translated">Spécifie la valeur du champ Montant.</target></trans-unit>
+        <trans-unit id="Page 1996007807 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Customer Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Overview List - Control Customer Name - Property ToolTip</note>
+        <target state="translated">Spécifie la valeur du champ Nom du client.</target></trans-unit>
+        <trans-unit id="Page 1996007807 - Control 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Customer No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Overview List - Control Customer No. - Property ToolTip</note>
+        <target state="translated">Spécifie la valeur du champ N° client.</target></trans-unit>
+        <trans-unit id="Page 1996007807 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Entry No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Overview List - Control Entry No. - Property ToolTip</note>
+        <target state="translated">Spécifie la valeur du champ N° d'entrée.</target></trans-unit>
+        <trans-unit id="Page 1996007807 - Control 2578636657 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the LastRunDate field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Overview List - Control LastRunDate - Property ToolTip</note>
+        <target state="translated">Spécifie la valeur du champ Date de dernière exécution.</target></trans-unit>
+        <trans-unit id="Page 1996007807 - Control 2720485332 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Source Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Overview List - Control Source Code - Property ToolTip</note>
+        <target state="translated">Spécifie la valeur du champ Code source.</target></trans-unit>
+        <trans-unit id="Page 1996007807 - Action 3614118165 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Overview List - Action Import Records - Property ToolTip</note>
+        <target state="translated">Importer les enregistrements</target></trans-unit>
+        <trans-unit id="Page 1996007807 - Action 3614118165 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Customer Overview List - Action Import Records - Property Caption</note>
+        <target state="translated">Importer les enregistrements</target></trans-unit>
+        <trans-unit id="Page 759057969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Data Types Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DataTypesCard - Property Caption</note>
+        <target state="translated">Fiche types de données</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expressions Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Property Caption</note>
+        <target state="translated">Fiche expressions</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Control 3567459362 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Control Input - Property Caption</note>
+        <target state="translated">Entrée</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Control 151815974 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter a value for Value1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Control Value1 - Property ToolTip</note>
+        <target state="translated">Saisissez une valeur pour Valeur1.</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Control 151815974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Control Value1 - Property Caption</note>
+        <target state="translated">Valeur1</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Control 2533693419 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter a value for Value2.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Control Value2 - Property ToolTip</note>
+        <target state="translated">Enter a value for Value2.</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Control 2533693419 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Control Value2 - Property Caption</note>
+        <target state="translated">Valeur2</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Control 3961040049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Output</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Control Output - Property Caption</note>
+        <target state="translated">Sortie</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Control 472338107 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The result of the operation.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Control Result - Property ToolTip</note>
+        <target state="translated">Le résultat de l'opération.</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Control 472338107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Result</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Control Result - Property Caption</note>
+        <target state="translated">Résultat</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Action 1561766673 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Click to calculate the result.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Action Execute - Property ToolTip</note>
+        <target state="translated">Cliquez pour calculer le résultat.</target></trans-unit>
+        <trans-unit id="Page 1907416471 - Action 1561766673 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execute</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Expressions Card - Action Execute - Property Caption</note>
+        <target state="translated">Exécuter</target></trans-unit>
+        <trans-unit id="Page 1501599054 - Action 1306239356 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set the interface implementation to Home.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyAddress - Action SendToHome - Property ToolTip</note>
+        <target state="translated">Définir l'implémentation de l'interface sur Accueil.</target></trans-unit>
+        <trans-unit id="Page 1501599054 - Action 1306239356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send to Home.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyAddress - Action SendToHome - Property Caption</note>
+        <target state="translated">Envoyer vers Accueil.</target></trans-unit>
+        <trans-unit id="Page 1501599054 - Action 1244763986 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set the interface implementation to Work.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyAddress - Action SendToWork - Property ToolTip</note>
+        <target state="translated">Définir l'implémentation de l'interface sur Bureau.</target></trans-unit>
+        <trans-unit id="Page 1501599054 - Action 1244763986 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send to Work.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyAddress - Action SendToWork - Property Caption</note>
+        <target state="translated">Envoyer vers Bureau.</target></trans-unit>
+        <trans-unit id="Page 1501599054 - Action 2505542762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select the address.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyAddress - Action WhatsTheAddress - Property ToolTip</note>
+        <target state="translated">Sélectionnez l'adresse.</target></trans-unit>
+        <trans-unit id="Page 1501599054 - Action 2505542762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>What's the Address?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MyAddress - Action WhatsTheAddress - Property Caption</note>
+        <target state="translated">Quelle est l'adresse ?</target></trans-unit>
+        <trans-unit id="Page 293005862 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statements Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statements Card - Property Caption</note>
+        <target state="translated">Fiche instructions</target></trans-unit>
+        <trans-unit id="Page 293005862 - Control 3567459362 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Input</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statements Card - Control Input - Property Caption</note>
+        <target state="translated">Entrée</target></trans-unit>
+        <trans-unit id="Page 293005862 - Control 1623047485 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select the difficulty level.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statements Card - Control Difficulty - Property ToolTip</note>
+        <target state="translated">Sélectionnez le niveau de difficulté.</target></trans-unit>
+        <trans-unit id="Page 293005862 - Control 1623047485 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Difficulty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statements Card - Control Difficulty - Property Caption</note>
+        <target state="translated">Difficulté</target></trans-unit>
+        <trans-unit id="Page 293005862 - Control 3961040049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Output</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statements Card - Control Output - Property Caption</note>
+        <target state="translated">Sortie</target></trans-unit>
+        <trans-unit id="Page 293005862 - Control 1789400218 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Level.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statements Card - Control Level - Property ToolTip</note>
+        <target state="translated">Niveau.</target></trans-unit>
+        <trans-unit id="Page 293005862 - Control 1789400218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Level</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statements Card - Control Level - Property Caption</note>
+        <target state="translated">Niveau</target></trans-unit>
+        <trans-unit id="Page 293005862 - Control 494089240 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggestion.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statements Card - Control Suggestion - Property ToolTip</note>
+        <target state="translated">Suggestion.</target></trans-unit>
+        <trans-unit id="Page 293005862 - Control 494089240 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggestion</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statements Card - Control Suggestion - Property Caption</note>
+        <target state="translated">Suggestion</target></trans-unit>
+        <trans-unit id="Report 2391586779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LAB CustomerList</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABCustomerList - Property Caption</note>
+        <target state="translated">Liste des clients LAB</target></trans-unit>
+        <trans-unit id="Report 2391586779 - ReportLayout 1525523358 - Property 2166945456" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An example of an Excel Layout.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABCustomerList - ReportLayout Example_EXCELLayout - Property Summary</note>
+        <target state="translated">Exemple de mise en page Excel.</target></trans-unit>
+        <trans-unit id="Report 2391586779 - ReportLayout 1525523358 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LABCustomerList</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABCustomerList - ReportLayout Example_EXCELLayout - Property Caption</note>
+        <target state="translated">LABCustomerList</target></trans-unit>
+        <trans-unit id="Report 2391586779 - ReportLayout 1016795576 - Property 2166945456" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An example of an RDLC Layout.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABCustomerList - ReportLayout Example_RDLCLayout - Property Summary</note>
+        <target state="translated">Exemple de mise en page RDLC.</target></trans-unit>
+        <trans-unit id="Report 2391586779 - ReportLayout 1016795576 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LABCustomerList</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABCustomerList - ReportLayout Example_RDLCLayout - Property Caption</note>
+        <target state="translated">LABCustomerList</target></trans-unit>
+        <trans-unit id="Report 2391586779 - ReportLayout 1343539805 - Property 2166945456" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An example of a Word Layout.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABCustomerList - ReportLayout Example_WORDLayout - Property Summary</note>
+        <target state="translated">Exemple de mise en page Word.</target></trans-unit>
+        <trans-unit id="Report 2391586779 - ReportLayout 1343539805 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LABCustomerList</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABCustomerList - ReportLayout Example_WORDLayout - Property Caption</note>
+        <target state="translated">LABCustomerList</target></trans-unit>
+        <trans-unit id="Report 1303561684 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABProcessingOnly - Control Options - Property Caption</note>
+        <target state="translated">Options</target></trans-unit>
+        <trans-unit id="Report 1303561684 - Control 1236612334 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Name2 To Apply.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABProcessingOnly - Control Name2ToApply - Property ToolTip</note>
+        <target state="translated">Spécifie le Nom2 à appliquer.</target></trans-unit>
+        <trans-unit id="Report 1303561684 - Control 1236612334 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name2 To Apply</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABProcessingOnly - Control Name2ToApply - Property Caption</note>
+        <target state="translated">Nom2 à appliquer</target></trans-unit>
+        <trans-unit id="Report 1303561684 - Control 1522552409 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Replace Existing?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABProcessingOnly - Control ReplaceExisting - Property ToolTip</note>
+        <target state="translated">Remplacer l'existant ?</target></trans-unit>
+        <trans-unit id="Report 1303561684 - Control 1522552409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Replace Existing?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report LABProcessingOnly - Control ReplaceExisting - Property Caption</note>
+        <target state="translated">Remplacer l'existant ?</target></trans-unit>
+        <trans-unit id="PageExtension 3385001476 - Action 2391586779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>LAB Customer List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CRONUS Customer List - Action LABCustomerList - Property Caption</note>
+        <target state="translated">Liste des clients LAB</target></trans-unit>
+        <trans-unit id="PageExtension 3383276319 - Control 3040068649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Social Media</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CRONUS Social Media Card - Control Social Media - Property Caption</note>
+        <target state="translated">Réseaux sociaux</target></trans-unit>
+        <trans-unit id="PageExtension 3383276319 - NamedType 1333961654" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 1496902179">
+          <source>Are you sure that you want to set the %1 to %2?</source>
+          <note from="Developer" annotates="general" priority="2">%1 is Credit Limit caption and %2 is the new Credit Limit value.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - NamedType AreYouSureQst</note>
+        <target state="translated">Voulez-vous vraiment définir le %1 sur %2 ?</target></trans-unit>
+        <trans-unit id="PageExtension 3383276319 - NamedType 2381744605" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 1496902179">
+          <source>The credit limit was rounded to %1 to comply with company policies.</source>
+          <note from="Developer" annotates="general" priority="2">%1 is new Credit Limit value</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - NamedType CreditLimitRoundedTxt</note>
+        <target state="translated">La limite de crédit a été arrondie à %1 pour respecter les politiques de l'entreprise.</target></trans-unit>
+        <trans-unit id="PageExtension 3383276319 - NamedType 1760454550" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 1496902179">
+          <source>The credit limit is up to date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - NamedType CreditLimitUpToDateTxt</note>
+        <target state="translated">La limite de crédit est à jour.</target></trans-unit>
+        <trans-unit id="PageExtension 3383276319 - Action 360998715 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Update Credit Limit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - Action UpdateCreditLimit - Property ToolTip</note>
+        <target state="translated">Mettre à jour la limite de crédit</target></trans-unit>
+        <trans-unit id="PageExtension 3383276319 - Action 360998715 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Update Credit Limit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerCardExt - Action UpdateCreditLimit - Property Caption</note>
+        <target state="translated">Mettre à jour la limite de crédit</target></trans-unit>
+        <trans-unit id="TableExtension 4206787226 - Field 1789936716 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Facebook</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CRONUS Social Media Table Ext - Field Facebook - Property Caption</note>
+        <target state="translated">Facebook</target></trans-unit>
+        <trans-unit id="TableExtension 4206787226 - Field 1477693348 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Instagram</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CRONUS Social Media Table Ext - Field Instagram - Property Caption</note>
+        <target state="translated">Instagram</target></trans-unit>
+        <trans-unit id="TableExtension 4206787226 - Field 1818834018 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>LinkedIn</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CRONUS Social Media Table Ext - Field LinkedIn - Property Caption</note>
+        <target state="translated">LinkedIn</target></trans-unit>
+        <trans-unit id="TableExtension 4206787226 - Field 362671151 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>X, formerly Twitter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CRONUS Social Media Table Ext - Field X, formerly Twitter - Property Caption</note>
+        <target state="translated">X, anciennement Twitter</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

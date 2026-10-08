@@ -1,0 +1,92 @@
+page 50123 "Customer SOAP Card"
+{
+    PageType = List;
+    Caption = 'Customer SOAP Card';
+    /*
+    APIPublisher = 'microsoft';
+    APIGroup = 'app';
+    APIVersion = 'v2.0';
+    EntityName = 'customerSOAPCard';
+    EntitySetName = 'customerSOAPCards'; */
+    SourceTable = Customer;
+    Editable = false;
+    InsertAllowed = false;
+    ModifyAllowed = false;
+    DeleteAllowed = false;
+    ApplicationArea = All;
+    UsageCategory = None;
+
+    layout
+    {
+        area(Content)
+        {
+            group(General)
+            {
+                Caption = 'General';
+
+                field(CustomerNo; Rec."No.")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Customer No.';
+                    ToolTip = 'Specifies the customer number.';
+                }
+
+                field(CustomerName; Rec.Name)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the customer name.';
+                }
+
+                field(AddressText; Rec.Address)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the customer address.';
+                }
+
+                field(Address2Text; Rec."Address 2")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the second line of the customer address.';
+                }
+
+                field(CityName; Rec.City)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the city of the customer.';
+                }
+
+                field(CountryRegionCode; Rec."Country/Region Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the country or region.';
+                }
+
+                field(PostCode; Rec."Post Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the postal code.';
+                }
+
+                field(PhoneNo; Rec."Phone No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the customer phone number.';
+                }
+
+                field(EmailAddress; Rec."E-Mail")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the customer email address.';
+                }
+
+                field(SystemId; Rec.SystemId)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Unique ID';
+                    Editable = false;
+                    ToolTip = 'Unique system identifier for the customer record.';
+                }
+            }
+        }
+    }
+}

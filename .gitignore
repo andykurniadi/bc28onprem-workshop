@@ -1,10 +1,12 @@
 # Local workshop configuration and secrets
+local-only/
 .env
 .env.*
 !*.example.env
 local.settings.json
 *-values.json
 !*-values.example.json
+*.publishsettings
 
 # Certificates and private keys
 *.pfx
@@ -13,12 +15,16 @@ local.settings.json
 *.key
 *.cer
 *.crt
+*.docx
+*.odt
+*.ps1
 
 # Original workshop export
 MS BC28 workshop.docx
 
 # Extracted screenshots can contain tenant identifiers or other local data.
-assets/screenshots/*.png
+assets/screenshots/**
+!assets/screenshots/.gitkeep
 
 # PowerShell secrets and user-specific files
 *.clixml
@@ -28,6 +34,10 @@ assets/screenshots/*.png
 al-project/.alpackages/
 al-project/*.app
 al-project/.vscode/launch.json
+al-project/backup/
+al-project/.snapshots/
+sourceDoc/*
+
 
 # Build and editor files
 bin/
