@@ -1,8 +1,21 @@
-# Business Central 28 On-Premises Email Workshop
+# Business Central 28 On-Premises Workshop
 
-This repository contains an end-to-end workshop for configuring Microsoft Dynamics 365 Business Central 28 on-premises email integration with Microsoft Entra ID, Microsoft 365, and Exchange Online.
+## About this workshop
 
-The lab exercises emphasize collaborating with GitHub Copilot in Visual Studio. They provide opportunities to explore how AI can assist with straightforward and complex tasks from Microsoft Learn exercises, as well as custom exercises you create.
+This repository provides hands-on exercises for Microsoft Dynamics 365 Business Central 28 on-premises. The labs use a Hyper-V environment to explore secure external access and integrations with Microsoft cloud services.
+
+The workshop covers:
+
+- Publishing Business Central APIs and OData web services for external access.
+- Configuring authentication with Microsoft Entra ID and Business Central credentials for lab scenarios.
+- Connecting Business Central with Microsoft 365, Exchange Online, Power Apps, Power Automate, and Microsoft Dataverse.
+- Exploring email integration, data synchronization, and AL development exercises.
+
+By completing the exercises, participants gain practical experience configuring and testing these integrations, and learn how authentication and connectivity choices affect an on-premises deployment.
+
+> **Lab safety:** The external-access and integration configurations in this workshop are for learning, testing, and experimentation only. Exposing internal Business Central services to the public internet is not recommended for production without appropriate security controls, network architecture, and governance.
+
+Some exercises also use GitHub Copilot in Visual Studio to explore AI-assisted development with Microsoft Learn tasks and custom exercises.
 
 ## Repository map
 
