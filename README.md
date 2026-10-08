@@ -21,7 +21,7 @@ Some exercises also use GitHub Copilot in Visual Studio to explore AI-assisted d
 
 | Path | Purpose |
 | --- | --- |
-| [`docs/`](docs/) | Module exercise instructions and the sensitive-data publishing policy. |
+| [`docs/`](docs/) | Module exercise instructions Details. |
 | [`al-project/Labs/`](al-project/Labs/) | AL project lab examples. |
 | [`other-project/Labs/`](other-project/Labs/) | Supplemental project lab materials. |
 | [`scripts/`](scripts/) | Optional PowerShell helpers for workshop setup and configuration. |
@@ -268,20 +268,3 @@ Some exercises also use GitHub Copilot in Visual Studio to explore AI-assisted d
 - ✓ Basic experience with Power Platform (for Module 12)
 - ✓ SQL and database concepts (helpful for understanding Business Central data model)
 
-### Environment Configuration
-
-This workshop uses the following example environment:
-- **Server name**: `win22-bc28`
-- **Web URL**: `https://win22-bc28:443/BC280/`
-- **Default ports**: API (7048), SOAP (7149), Management (7045), Debug (7049)
-
-**Multiple Instances**: Module 1 creates additional server instances (`BC280-Entra`, `BC280-NAVUP`). Each instance runs on the same server but uses different authentication methods and configurations.
-
-**Cloud Configuration**: Modules 1, 3, and 12 require cloud tenant URLs:
-- **Entra**: https://entra.microsoft.com (or your tenant URL)
-- **Microsoft 365**: https://admin.microsoft.com (or your M365 tenant)
-- **Power Platform**: https://[org].crm.dynamics.com (or your Power Apps environment URL)
-
-Replace all example values with those appropriate for your environment. For module-specific configuration details, refer to the Prerequisites section above.
-
-**Note**: Not all prerequisites are required for every module. Refer to the specific module description for required vs. optional prerequisites.
