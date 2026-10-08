@@ -15,7 +15,7 @@ Setup user to be able to send email from BC
 ![Screenshot 3](../assets/images/module-3-7-exercise-03.png)
 <!-- Auto-blurred via OCR redaction pipeline (1 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
 
-Sent to [andy.kurniadi@outlook.com](mailto:andy.kurniadi@outlook.com) and received
+Sent to `[your ID]@contoso.example` and received.
 
 Done!
 
@@ -26,7 +26,7 @@ Done!
 Need to create shared mailbox
 `https://admin.cloud.microsoft/exchange#`
 
-Using developer1
+Using the service account.
 [Set up email logging - Business Central | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/business-central/marketing-set-up-email-logging?wt.mc_id=d365bc_inproduct_page)
 
 **Property**
@@ -43,12 +43,12 @@ In Exchange admin center → Roles → Admin roles, click Add role group (not se
 **2. Assign the "Public Folders" role**
 In the role selection step, add the single role called **"Public Folders"** (not "Public Folder Replication" or anything else — just that one).
 **3. Add the email-logging account as a member**
-Add the specific account that Business Central's scheduled job will use to connect to Exchange and process emails — this should be a dedicated, non-personal account per Microsoft's guidance, not your personal admin login.  → It should be using developer1. KIV
+Add the specific account that Business Central's scheduled job will use to connect to Exchange and process emails — this should be a dedicated, non-personal account per Microsoft's guidance, not your personal admin login.
 
 ![Screenshot 4](../assets/images/module-3-7-exercise-04.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
 
-Assigned to : developer1
+Assigned to : `<service-account>`
 Permission: “Public Folder”
 
 **4. Create the public folder mailbox named "Public MailBox"**
@@ -93,25 +93,25 @@ Mail-Enable for Queue
 ![Screenshot 12](../assets/images/module-3-7-exercise-12.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
 
-Queue@andykurniadioutlook.onmicrosoft.com
+Queue@[your ID].onmicrosoft.com
 
 Mail-enable sending emails to the Queue public folder
 Use PowerShell CLI online
 Note: it does not work with UPN following script
 
-`Connect-ExchangeOnline -UserPrincipalName developer1@andykurniadioutlook.onmicrosoft.com `
+`Connect-ExchangeOnline -UserPrincipalName <service-account>@[your ID].onmicrosoft.com `
 
 Login first
 `connect-exchangeonline ``-Device``  `
-`To sign in, use a web browser to open the page https://login.microsoft.com/device and enter the code IZ7UMSH9A to authenticate.`
+`To sign in, use a web browser to open the page https://login.microsoft.com/device and enter the code <DEVICE-CODE> to authenticate.`
 
 `Get-ConnectionInformation`
 
-`ConnectionId                    : 649ed517-b73c-4484-be72-f796ea9fa15d`
+`ConnectionId                    : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`
 `State                           : Connected`
 `Id                              : 1`
 `Name                            : ExchangeOnline_1`
-`UserPrincipalName               : developer1@andykurniadioutlook.onmicrosoft.com`
+`UserPrincipalName               : <service-account>@[your ID].onmicrosoft.com`
 `ConnectionUri                   : https://outlook.office365.com`
 `AzureAdAuthorizationEndpointUri : https://login.microsoftonline.com/organizations`
 `TokenExpiryTimeUTC              : 8/8/2026 5:40:43 AM +00:00`
@@ -122,7 +122,7 @@ Login first
 `DelegatedOrganization           : `
 `AppId                           : `
 `PageSize                        : 0`
-`TenantID                        : 84295b8f-b56a-4026-badd-441329a8e103`
+`TenantID                        : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`
 `TokenStatus                     : Active`
 `ConnectionUsedForInbuiltCmdlets : True`
 `IsEopSession                    : False`
@@ -150,7 +150,7 @@ Login first
 
 **Create the two mail flow (BCC) rules**
 
-[Queue@andykurniadioutlook.onmicrosoft.com](mailto:Queue@andykurniadioutlook.onmicrosoft.com)
+`Queue@[your ID].onmicrosoft.com`
 
 Inbound
 Outbound
@@ -167,8 +167,8 @@ Rule setting are similar for both inbound/outbound
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
 
 Test the public queue folder.
-- Send test email from [andy.kurniadi@outook.com](mailto:andy.kurniadi@outook.com) to [developer1@andykurniadioutlook.onmicrosoft.com](mailto:developer1@andykurniadioutlook.onmicrosoft.com)
-- Add public folder from the web outlook dev1.
+- Send test email from `[your ID]@contoso.example` to `<service-account>@[your ID].onmicrosoft.com`.
+- Add the public folder from Outlook while signed in to the service account.
 
 ![Screenshot 16](../assets/images/module-3-7-exercise-16.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
@@ -195,27 +195,27 @@ I disabled the rule
 Need to create shared mailbox
 `https://admin.cloud.microsoft/exchange#`
 
-Using developer1
+Using the service account.
 [Set up email logging - Business Central | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/business-central/marketing-set-up-email-logging?wt.mc_id=d365bc_inproduct_page)
 
 **Create the shared mailbox**
-Exchange admin center → Recipients → Mailboxes → Add a shared mailbox. Give it a display name (e.g. "BC Email Logging") and an address like emaillogging@andykurniadioutlook.onmicrosoft.com. This is a completely separate mailbox from the Queue public folder — don't reuse that address.
+Exchange admin center → Recipients → Mailboxes → Add a shared mailbox. Give it a display name (e.g. "BC Email Logging") and an address like `emaillogging@[your ID].onmicrosoft.com`. This is a completely separate mailbox from the Queue public folder — don't reuse that address.
 
 ![Screenshot 20](../assets/images/module-3-7-exercise-20.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
 
-[emaillogging@andykurniadioutlook.onmicrosoft.com](mailto:emaillogging@andykurniadioutlook.onmicrosoft.com)
+`emaillogging@[your ID].onmicrosoft.com`
 
 **Add the email-logging account as a member of the shared mailbox**
-The account that you use for email logging is an Exchange Online account. The scheduled job uses the account to connect to the shared mailbox and process emails. This account shouldn't be associated with a specific person.</cite> Given your setup, you can use **developer1 **again, or ideally create a dedicated non-personal account for this purpose. Open the** shared mailbox → Delegation tab → add that account under "Read and manage (Full Access)**."
+The account that you use for email logging is an Exchange Online account. The scheduled job uses the account to connect to the shared mailbox and process emails. This account shouldn't be associated with a specific person. Use a dedicated non-personal service account for this purpose. Open the shared mailbox → Delegation tab → add that account under "Read and manage (Full Access)."
 
 ![Screenshot 21](../assets/images/module-3-7-exercise-21.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
 
-Add developer1
+Add the service account.
 
 **Optional: grant Read access to the Archive folder for other viewers**
-<cite index="58-1">You can allow another user to open an email message in Exchange related to an interaction log entry from Business Central by giving the user Read permission to the Archive folder in the shared mailbox.</cite> This is optional — **skip it if only developer1 needs visibility**.
+<cite index="58-1">You can allow another user to open an email message in Exchange related to an interaction log entry from Business Central by giving the user Read permission to the Archive folder in the shared mailbox.</cite> This is optional — skip it if no other user needs visibility.
 
 **Create the two mail flow rules, BCC'ing the shared mailbox**
 In Exchange admin center → Mail flow → Rules, create two rules named exactly the same as your public folder rules ("**Log Email Sent to This Organization" / "Log Email Sent from This Organization**") — or rename to distinguish them since you'll now have duplicates. <cite index="58-1">The inbound rule triggers when the sender is located outside the organization and the recipient is located inside; the outbound rule is the reverse. Both use "BCC the message to" pointing at the shared mailbox's address instead of the Queue folder's address.</cite>
@@ -231,7 +231,7 @@ Outbound
 
 Enabled Both Rules
 
-Test sent email from outlook [andy.kurniadi@outlook.com](mailto:andy.kurniadi@outlook.com) to dev1
+Test sent email from Outlook using `[your ID]@contoso.example` to the service account.
 
 In outlook client cloud, add shared mailbox
 
@@ -262,7 +262,7 @@ Enable Manual Setup Done
 ![Screenshot 29](../assets/images/module-3-7-exercise-29.png)
 <!-- Auto-blurred via OCR redaction pipeline (4 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
 
-Use developer1
+Use the service account.
 
 ![Screenshot 30](../assets/images/module-3-7-exercise-30.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
@@ -368,8 +368,8 @@ Microsoft's guidance explicitly says to:
 ![Screenshot 49](../assets/images/module-3-7-exercise-49.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
 
-App Registration ID		: a1309c9b-db58-4b5b-ac18-a8222de707df
-Enterprise App Object ID	: a0e9021a-807e-41e9-9eef-834b39c681e2
+App Registration ID		: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+Enterprise App Object ID	: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 Azure Portal → Enterprise Application
 Entra Portal ([https://entra.microsoft.com/](https://entra.microsoft.com/)) → Enterprise Application
 
@@ -383,7 +383,7 @@ Connect authenticate with device
 
 Check SMTP client is not disabled
 
-`Get-CASMailbox -Identity developer1 | Select-Object SmtpClientAuthenticationDisabled`
+`Get-CASMailbox -Identity <service-account> | Select-Object SmtpClientAuthenticationDisabled`
 `SmtpClientAuthenticationDisabled`
 
 Set to Enable SMTP Client
@@ -392,24 +392,24 @@ Set to Enable SMTP Client
 Set New Service Principal
 Service ID ⇒ Object ID of enterprise app Entra for BC OnPrem
 `New-ServicePrincipal ``
-`    -AppId "a1309c9b-db58-4b5b-ac18-a8222de707df" ``
-`    -ServiceId "a0e9021a-807e-41e9-9eef-834b39c681e2" ``
+`    -AppId "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" ``
+`    -ServiceId "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" ``
 `    -DisplayName "BC SMTP OAuth"`
 
 Add Recipient Permission
 Thruster ⇒ Object ID
 
 `Add-RecipientPermission ``
-`-Identity "developer1@andykurniadioutlook.onmicrosoft.com" ``
-`-Trustee "a0e9021a-807e-41e9-9eef-834b39c681e2" ``
+`-Identity "<service-account>@[your ID].onmicrosoft.com" ``
+`-Trustee "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" ``
 `-AccessRights SendAs ``
 `-Confirm:$false`
 
 Add Mailbox Permission
 User ⇒ Object ID
 `Add-MailboxPermission ``
-`-Identity "developer1@andykurniadioutlook.onmicrosoft.com" ``
-`-User "a0e9021a-807e-41e9-9eef-834b39c681e2" ``
+`-Identity "<service-account>@[your ID].onmicrosoft.com" ``
+`-User "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" ``
 `-AccessRights FullAccess ``
 `-AutoMapping:$false`
 

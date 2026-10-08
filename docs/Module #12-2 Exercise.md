@@ -23,9 +23,9 @@ After some test, the Dynamics 365 Business Central On-Prem
 `Note: current connector is Preview`
 
 **The connector picker fixed to the api/beta**
-[`https://mandyk1973.asuscomm.com:7248/BC280-NAVUP/api/beta`](https://mandyk1973.asuscomm.com:7248/BC280-NAVUP/api/beta)
+`https://[your ID].example.com:7248/BC280-NAVUP/api/beta`
 `{`
-`  "@odata.context": "https://mandyk1973.asuscomm.com:7248/BC280-NAVUP/api/beta/$metadata",`
+`  "@odata.context": "https://[your ID].example.com:7248/BC280-NAVUP/api/beta/$metadata",`
 `  "value": [`
 `    {`
 `      "name": "entityDefinitions",`
@@ -71,7 +71,7 @@ After some test, the Dynamics 365 Business Central On-Prem
 `}`
 
 `API available routes list`
-[`https://mandyk1973.asuscomm.com:7248/BC280-NAVUP/api/beta/apicategoryroutes`](https://mandyk1973.asuscomm.com:7248/BC280-NAVUP/api/beta/apicategoryroutes)
+`https://[your ID].example.com:7248/BC280-NAVUP/api/beta/apicategoryroutes`
 
 Select company (My Test Company)
 

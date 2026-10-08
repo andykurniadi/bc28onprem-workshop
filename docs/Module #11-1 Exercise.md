@@ -43,7 +43,7 @@ Invite developer 1 → add per projects
 ![Screenshot 9](../assets/images/module-11-1-exercise-09.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
 
-Add developer1 as project administrators
+Add the appropriate account as a project administrator.
 
 ![Screenshot 10](../assets/images/module-11-1-exercise-10.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->

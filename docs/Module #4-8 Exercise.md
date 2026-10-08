@@ -37,7 +37,7 @@ breakOnNext → WebClient  (WebClient, WebServiceClient, Background)
 `            "request":"attach",`
 `            "type": "al",`
 `            "environmentType": "OnPrem",`
-`            "server": "http://win22-bc28",`
+`            "server": "http://<your-server>",`
 `            "serverInstance": "BC280",`
 `            "port": 7049,`
 `            "authentication": "Windows",`

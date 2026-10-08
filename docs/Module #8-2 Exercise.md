@@ -38,7 +38,7 @@ Prompt Instruction 2:
 `“”revise following:`
 `use object id 50123 and validate the ID`
 `use following for API configuration`
-`APIPublisher = 'andykurniadi'`
+`APIPublisher = '<your-publisher>'`
 `APIGroup = 'ak_app'`
 `EntityName = 'ak_customer'`
 `EntitySetName = 'ak_customers'`
@@ -50,7 +50,7 @@ Agent Response:
 `“”Updated plan`
 - `Create the new API page in M8_2_OData_SOAP_API using a unique page ID such as 50142.`
 - `Set the page metadata exactly as:`
-- `APIPublisher = 'andykurniadi'`
+- `APIPublisher = '<your-publisher>'`
 - `APIGroup = 'ak_app'`
 - `EntityName = 'ak_customer'`
 - `EntitySetName = 'ak_customers'`
@@ -68,7 +68,7 @@ Prompt Instruction 3:
 ![Screenshot 2](../assets/images/module-8-2-exercise-02.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
 
-`win22-bc28:7047/BC280/WS/CRONUS International Ltd./Page/ak_Customers `
+`<your-server>:7047/BC280/WS/CRONUS International Ltd./Page/ak_Customers`
 
 ![Screenshot 3](../assets/images/module-8-2-exercise-03.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
@@ -83,12 +83,12 @@ Prompt Instruction 1:
 `“Create C# console project named BC_SOAP_client”`` `
 
 Prompt Instruction 2:
-`“``/plan`` I want to create C# console that consume SOAP web service , url win22-bc28:7047/BC280/WS/My Test Company/Page/ak_Customers. Use basic windows authentication and hardcoded in programs. The program is listing the customers with filter of country, defaulted as 'GB' ,you may prompt user to enter the country code”`
+`“``/plan`` I want to create a C# console app that consumes a SOAP web service at <your-server>:7047/BC280/WS/<your-company>/Page/ak_Customers. Use Windows authentication without hardcoding credentials. List customers filtered by country, defaulting to 'GB', and optionally prompt for a country code.”`
 
 Agent ask question following:
 `“””`
 `Q:`` What Windows credentials should the planned client hardcode: domain\username and password, or should it use placeholders such as CONTOSO\soapuser / password?`
-`A:`` user name: winuser1 and password: P455w0rd`
+`A:`` Use placeholders for the username and password; do not hardcode credentials.`
 `Q: Can the implementation assume the live endpoint exposes the standard Business Central Customers page WSDL at the supplied URL plus `?wsdl`, with generated proxy code committed to the project?`
 `A:`` Yes, generate from live WSDL - Use the endpoint's WSDL as the source of truth for the SOAP proxy.`
 `Q:`` Should the country filter use the SOAP Customers page field `Country_Region_Code` and display the standard customer fields returned by the service?`

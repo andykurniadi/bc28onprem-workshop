@@ -9,13 +9,13 @@
 ![Screenshot 1](../assets/images/module-11-2-exercise-01.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
 
-https://andykurniadi@dev.azure.com/andykurniadi/Hello%20Business%20Central/_git/Hello%20Business%20Central
+https://dev.azure.com/[your ID]/<project>/_git/<repo>
 
 From AL Project extension:
 
 Ctrl+Shift+P : Git: Add Remote
 The url
-https://andykurniadi@dev.azure.com/andykurniadi/Hello%20Business%20Central/_git/Hello%20Business%20Central
+https://dev.azure.com/[your ID]/<project>/_git/<repo>
 → it will pop up for oauth2.0 client authentication →use dev1
 
 Remote name is : ORIGIN

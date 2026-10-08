@@ -16,9 +16,9 @@
 Connection with on prem data gateway enable
 
 Using Windows → NTLM
-[https://mandyk1973.asuscomm.com:7048/BC280/ODataV4/Company('My%20Test%20Company')/ak_employees](https://mandyk1973.asuscomm.com:7048/BC280/ODataV4/Company('My%20Test%20Company')/ak_employees)
+`https://[your ID].example.com:7048/BC280/ODataV4/Company('<your-company>')/ak_employees`
 
-WIN22-BC28\WINUSER1
+`<your-server>\<your-user>`
 
 ![Screenshot 4](../assets/images/module-12-4-exercise-04.png)
 <!-- Auto-blurred via OCR redaction pipeline (1 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
@@ -26,7 +26,7 @@ WIN22-BC28\WINUSER1
 Does not work: NTLM and SPNEGO
 
 Using Navision User Password
-[https://mandyk1973.asuscomm.com:7248/BC280-NAVUP/ODataV4/Company('My%20Test%20Company')/ak_employees](https://mandyk1973.asuscomm.com:7248/BC280-NAVUP/ODataV4/Company('My%20Test%20Company')/ak_employees)
+`https://[your ID].example.com:7248/BC280-NAVUP/ODataV4/Company('<your-company>')/ak_employees`
 
 ![Screenshot 5](../assets/images/module-12-4-exercise-05.png)
 <!-- Auto-blurred via OCR redaction pipeline (2 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
@@ -77,7 +77,7 @@ Use : My Test Company
 
 Client ID:  ID of  `BC OnPrem Application Integration`
 Client Secret: `<client secret value>`
-Redirect URL: [`https://win22-bc28/BC280/OAuthLanding.htm`](https://win22-bc28/BC280/OAuthLanding.htm)
+Redirect URL: `https://<your-server>/BC280/OAuthLanding.htm`
 
 `Add this redirect URL at azure application registration`
 
@@ -87,7 +87,7 @@ Redirect URL: [`https://win22-bc28/BC280/OAuthLanding.htm`](https://win22-bc28/B
 ![Screenshot 17](../assets/images/module-12-4-exercise-17.png)
 <!-- Auto-blurred via OCR redaction pipeline (1 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
 
-`https://orgb8d95e1e.crm5.dynamics.com`
+`https://<your-org>.crm5.dynamics.com`
 
 ![Screenshot 18](../assets/images/module-12-4-exercise-18.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
@@ -218,7 +218,7 @@ Power Platform admin center→DEV environment → Setting → Audits & Logs → 
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
 
 Below account owner is
-`BCI - My Test Company (4165440c-0888-f111-ad39-00155d017002)`
+`BCI - <your-company> (XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)`
 
 ![Screenshot 45](../assets/images/module-12-4-exercise-45.png)
 <!-- Auto-blurred via OCR redaction pipeline (5 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
@@ -227,19 +227,19 @@ Below account owner is
 
 Integration Table filter in default was:
 
-`VERSION(1) SORTING(Field1) WHERE(Field6=1(3),Field54=1(0),Field202=1({``0E19F228-35BF-F111-AAAF-000D3A857861``}|{00000000-0000-0000-0000-000000000000}))`
+`VERSION(1) SORTING(Field1) WHERE(Field6=1(3),Field54=1(0),Field202=1({``XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX``}|{00000000-0000-0000-0000-000000000000}))`
 
 Translate with field name
 `WHERE(`
 `	StateCode = Active,`
 `	IsDeleted = No,`
 `	CompanyId IN (`
-`    	``0E19F228-35BF-F111-AAAF-000D3A857861``,`
+`    	``XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX``,`
 `    	00000000-0000-0000-0000-000000000000`
 `	)`
 `)`
 
-Need to change with My Test Company ID : `4165440c-0888-f111-ad39-00155d017002  `
+Replace `<your-company>` with the company selected in your own environment.
 
 ![Screenshot 46](../assets/images/module-12-4-exercise-46.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->

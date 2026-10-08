@@ -14,12 +14,12 @@ Using Client Secret BC Email Secret
 ![Screenshot 1](../assets/images/module-12-5-exercise-01.png)
 <!-- Auto-blurred via OCR redaction pipeline (8 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
 
-API: [`https://mandyk1973.asuscomm.com:7148/BC280-Entra/api/andykurniadi/ak_app/v2.0/companies(4165440c-0888-f111-ad39-00155d017002)/ak_customers`](https://mandyk1973.asuscomm.com:7148/BC280-Entra/api/andykurniadi/ak_app/v2.0/companies(4165440c-0888-f111-ad39-00155d017002)/ak_customers)
+API: `https://[your ID].example.com:7148/BC280-Entra/api/<your-publisher>/ak_app/v2.0/companies(XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)/ak_customers`
 
 **Host : **
-[**mandyk1973.asuscomm.com:7148**](http://mandyk1973.asuscomm.com:7148)
+`[your ID].example.com:7148`
 **Base URL: **
-**/BC280-Entra/api/andykurniadi/ak_app/v2.0**
+`/BC280-Entra/api/<your-publisher>/ak_app/v2.0`
 
 ![Screenshot 2](../assets/images/module-12-5-exercise-02.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->
@@ -28,17 +28,17 @@ API: [`https://mandyk1973.asuscomm.com:7148/BC280-Entra/api/andykurniadi/ak_app/
 <!-- Auto-blurred via OCR redaction pipeline (4 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
 
 `Identity Provider 	: Azure AD`
-`Client ID		: a1309c9b-db58-4b5b-ac18-a8222de707df`
+`Client ID		: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`
 `Client Secret	: <Client Secret>`
 `
 Authorized URL 	: https://login.microsoftonline.com`
-`Tenant ID		: 84295b8f-b56a-4026-badd-441329a8e103`
-`Resource URL		: a1309c9b-db58-4b5b-ac18-a8222de707df`
+`Tenant ID		: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`
+`Resource URL		: <your-resource-URL>`
 
 `Scope 			: Scope `
 
 `Redirect URL		:`
-`https://global.consent.azure-apim.net/redirect/bc28-20onprem-20get-20customer-5f4c3a1b61feb047-8a190a8ab0f6da74`
+`https://global.consent.azure-apim.net/redirect/<your-connector-id>`
 
 Add redirect URL Application Registration
 
@@ -74,17 +74,17 @@ Update the custom connector
 <!-- Auto-blurred via OCR redaction pipeline (1 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
 
 From root api URI:
-https://mandyk1973.asuscomm.com:7148/BC280-Entra/api/v2.0/companies
+`https://[your ID].example.com:7148/BC280-Entra/api/v2.0/companies`
 
-From “andykurniadi” publisher
+From your API publisher
 
-https://mandyk1973.asuscomm.com:7148/BC280-Entra/api/andykurniadi/ak_app/v2.0/companies
+`https://[your ID].example.com:7148/BC280-Entra/api/<your-publisher>/ak_app/v2.0/companies`
 
 `{`
-`  "@odata.context": ``"https://mandyk1973.asuscomm.com:7148/BC280-Entra/api/andykurniadi/ak_app/v2.0/$metadata#companies"``,`
+`  "@odata.context": ``"https://[your ID].example.com:7148/BC280-Entra/api/<your-publisher>/ak_app/v2.0/$metadata#companies"``,`
 `  "value": [`
 `    {`
-`      "id": "5010745b-bd75-f111-a5bb-7ced8d3f746d",`
+`      "id": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",`
 `      "systemVersion": "28.3.52162.52222",`
 `      "timestamp": 48351,`
 `      "name": "CRONUS International Ltd.",`
@@ -96,30 +96,29 @@ https://mandyk1973.asuscomm.com:7148/BC280-Entra/api/andykurniadi/ak_app/v2.0/co
 `      "systemModifiedBy": "00000000-0000-0000-0000-000000000001"`
 `    },`
 `    {`
-`      "id": "4165440c-0888-f111-ad39-00155d017002",`
+`      "id": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",`
 `      "systemVersion": "28.3.52162.52222",`
 `      "timestamp": 524997,`
 `      "name": "My Test Company",`
 `      "displayName": "CRONUS International Ltd.",`
 `      "businessProfileId": "",`
 `      "systemCreatedAt": "2026-07-25T09:05:58.223Z",`
-`      "systemCreatedBy": "f0e8ecdc-e4e2-45db-b50f-f20c9b967caa",`
+`      "systemCreatedBy": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",`
 `      "systemModifiedAt": "2026-09-08T03:46:02.14Z",`
-`      "systemModifiedBy": "f0e8ecdc-e4e2-45db-b50f-f20c9b967caa"`
+`      "systemModifiedBy": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"`
 `    }`
 `  ]`
 `}`
 
-Test company ID :
-4165440c-0888-f111-ad39-00155d017002
+Test company ID: `<YOUR-COMPANY-GUID>`
 
 #### Create GetCompanies Action
 
 **Note:** use Entra Server Instance
-https://mandyk1973.asuscomm.com:7148/BC280-Entra/api/andykurniadi/ak_app/v2.0/
+`https://[your ID].example.com:7148/BC280-Entra/api/<your-publisher>/ak_app/v2.0/`
 
 {
-"@odata.context": "https://mandyk1973.asuscomm.com:7248/BC280-NAVUP/api/andykurniadi/ak_app/v2.0/$metadata",
+"@odata.context": "https://[your ID].example.com:7248/BC280-NAVUP/api/<your-publisher>/ak_app/v2.0/$metadata",
 "value": [
 {
 "name": "entityDefinitions",
@@ -180,17 +179,17 @@ Update the connector and test
 
 #### Discovery: Create GetCompanyList that response only list id and name
 
-https://mandyk1973.asuscomm.com:7248/BC280-NAVUP/api/andykurniadi/ak_app/v2.0/companies?**$select=id,name**
+`https://[your ID].example.com:7248/BC280-NAVUP/api/<your-publisher>/ak_app/v2.0/companies?**$select=id,name**`
 
 `{`
-`  "@odata.context": "https://mandyk1973.asuscomm.com:7248/BC280-NAVUP/api/andykurniadi/ak_app/v2.0/$metadata#companies",`
+`  "@odata.context": "https://[your ID].example.com:7248/BC280-NAVUP/api/<your-publisher>/ak_app/v2.0/$metadata#companies",`
 `  "value": [`
 `    {`
-`      "id": "5010745b-bd75-f111-a5bb-7ced8d3f746d",`
+`      "id": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",`
 `      "name": "CRONUS International Ltd."`
 `    },`
 `    {`
-`      "id": "4165440c-0888-f111-ad39-00155d017002",`
+`      "id": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",`
 `      "name": "My Test Company"`
 `    }`
 `  ]`

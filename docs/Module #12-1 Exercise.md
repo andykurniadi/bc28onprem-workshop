@@ -24,7 +24,7 @@ Install the gateway in BC on prem host server
 ![Screenshot 5](../assets/images/module-12-1-exercise-05.png)
 <!-- Auto-blurred via OCR redaction pipeline (1 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
 
-Key: P455w0rd
+Key: `<YOUR-PASSWORD>`
 
 ![Screenshot 6](../assets/images/module-12-1-exercise-06.png)
 <!-- Auto-reviewed via OCR redaction pipeline: 0 sensitive text regions detected. OCR cannot catch non-text sensitive content (logos, photos, stylized graphics) -- please still skim before a public push. -->

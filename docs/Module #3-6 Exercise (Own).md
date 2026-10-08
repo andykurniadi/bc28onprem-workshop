@@ -16,7 +16,7 @@ App Registration		: `BC OnPrem Application Integration`
 <!-- Auto-blurred via OCR redaction pipeline (10 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
 
 Client Secret Value	: `SZm8Q~wi3mlgxt5vzmZltnmet7Wvs9pX4dagwc0B`
-Client Secret ID	: `7dcb27c4-f3ed-47f9-ac4c-78e85d55f5fa`
+Client Secret ID	: `XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`
 
 **Add Microsoft Graph delegated permission **
 
@@ -34,7 +34,7 @@ Permission to add: Mail.Send, offline_access, openid, profile, Email
 ![Screenshot 4](../assets/images/module-3-6-exercise-own-04.png)
 <!-- Auto-blurred via OCR redaction pipeline (2 region(s) detected: GUIDs/emails/secret-token keywords/hostnames/IPs). Please spot-check before relying on this for a public push. -->
 
-Redirect URL	: `https://win22-bc28:443/BC280/OAuthLanding.htm`
+Redirect URL	: `https://<your-server>:443/BC280/OAuthLanding.htm`
 Update the Redirect URL in app registration.
 
 ![Screenshot 5](../assets/images/module-3-6-exercise-own-05.png)
