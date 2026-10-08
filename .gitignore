@@ -37,6 +37,7 @@ al-project/.vscode/launch.json
 al-project/backup/
 al-project/.snapshots/
 sourceDoc/*
+.github/*
 
 
 # Build and editor files

@@ -1,13 +1,17 @@
-# Sensitive-data and redaction policy
+# Sensitive Data and Redaction Policy
 
-Use this policy before committing or publishing workshop material. It applies to documentation, scripts, templates, screenshots, filenames, and Git history.
+Use this policy before adding, committing, or publishing workshop material. It applies to documentation, scripts, templates, screenshots, filenames, and Git history. Contributors are responsible for reviewing their changes; automated scans are an additional safeguard, not approval to publish.
 
-## Never publish
+## 1. Information that must not be published
 
-- Secrets: passwords, client secrets, API keys, access or refresh tokens, connection strings, SAS URLs, certificates, and private keys.
-- Identifiers tied to a real tenant or organization: tenant, subscription, app, object, and environment IDs; organization-specific resource names and URLs.
-- Personal or customer data: names, email addresses, phone numbers, addresses, employee IDs, user principal names, customer records, and company or project names.
-- Infrastructure details: public IPs, internal hostnames, FQDNs, server names, and tenant-specific service URLs.
+Replace real values with safe placeholders before adding content to the repository.
+
+| Category | Examples |
+| --- | --- |
+| Secrets and credentials | Passwords, client secrets, API keys, access or refresh tokens, connection strings, SAS URLs, certificates, private keys |
+| Tenant and organization identifiers | Tenant, subscription, app, object, and environment IDs; organization-specific resource names and URLs |
+| Personal and customer data | Names, email addresses, phone numbers, addresses, employee IDs, user principal names, customer records, company or project names |
+| Infrastructure details | Public IPs, internal hostnames, FQDNs, server names, tenant-specific service URLs |
 
 Use consistent, obviously fake placeholders:
 
@@ -23,40 +27,56 @@ Use consistent, obviously fake placeholders:
 
 Never partially mask a secret. A prefix or suffix can still disclose information and help guess the rest.
 
-## Screenshots
+## 2. Prepare and review screenshots
 
 1. Prefer a demo or throwaway tenant. Close unrelated tabs, bookmarks, notifications, and account menus before capture.
-2. Crop to the UI needed to explain the step.
+2. Crop the image to only the UI needed to explain the step.
 3. Cover every sensitive field with an opaque, solid-color box. Do not use blur, pixelation, or translucent overlays.
 4. Flatten and re-export the image so hidden layers and original pixels cannot be recovered. Strip EXIF and other metadata.
-5. Check the URL bar, browser tabs, breadcrumbs, account and tenant menus, notifications, taskbar, developer tools, errors, data rows, and filenames.
-6. Review at 200% zoom. OCR and secret scanners do not establish that an image is safe; use a second reviewer for public releases.
-7. Use neutral filenames, for example `step-03-create-connection.png`.
+5. Inspect the URL bar, browser tabs, breadcrumbs, account and tenant menus, notifications, taskbar, developer tools, errors, data rows, and filenames.
+6. Review the final image at 200% zoom. OCR and secret scanners do not establish that an image is safe; arrange a second review for public releases.
+7. Give the image a neutral filename, such as `step-03-create-connection.png`.
 
 Keep raw captures and unredacted notes under the ignored `local-only/` directory. Never commit raw originals as backups.
 
-## Repository safeguards
+## 3. Repository safeguards
 
-- `.gitignore` excludes common local configuration, credentials, private keys, and `local-only/`. Ignore rules do not remove a file that is already tracked; review staged files before committing.
-- The GitHub Actions Gitleaks workflow scans text changes for known secret patterns. It cannot identify all personal, tenant-specific, or image content.
+### Local files and credentials
+
+- The `.gitignore` excludes common local configuration, credentials, private keys, and `local-only/`. Ignore rules do not remove files that are already tracked; inspect staged files before committing.
+- Keep real configuration in an approved secret store or environment variables, never in the repository.
+
+### Automated scanning
+
+- The GitHub Actions Gitleaks workflow runs on pushes and pull requests to scan for known secret patterns. A passing scan does not prove content is safe and cannot replace review of personal details, tenant-specific identifiers, or screenshots.
 - Review staged text for common identifiers before committing:
 
   ```powershell
   git diff --cached --unified=0 | Select-String -Pattern '(?i)\b[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}\b|\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b|\b(?:\d{1,3}\.){3}\d{1,3}\b|\b[A-Za-z0-9-]+\.(?:onmicrosoft\.com|crm\d+\.dynamics\.com|azurewebsites\.net)\b'
   ```
 
-  Treat matches as review prompts: demo values and documentation-range IPs can be safe, but verify each one. Add local checks for organization-specific names or phone patterns as needed; do not put real personal identifiers into scanner configuration committed to this repository.
-- Repository owners should enable GitHub secret scanning and push protection in repository security settings. Keep real configuration in a secret store or environment variables, never in the repository.
-- Require the `Gitleaks` status check on protected branches. The workflow detects pushed changes; it does not block direct pushes by itself.
+  Treat matches as prompts for review: demo values and documentation-range IP addresses can be safe, but verify each match. Add local checks for organization-specific names or phone patterns as needed. Do not commit real personal identifiers in scanner configuration.
 
-## Pre-publish checklist
+### GitHub repository controls
 
-- No real secrets, tokens, connection strings, tenant IDs, personal data, or organization-specific values in text, scripts, templates, or filenames.
-- All screenshots are cropped as needed, solid-masked, flattened, metadata-stripped, and manually reviewed.
-- The Gitleaks workflow passes and a scoped identifier review is complete.
-- Staged files contain only intended content. A clean working tree scan does not inspect prior Git history.
-- Review Git history before publishing. Deleted secrets remain in history.
+- Repository owners should enable GitHub secret scanning and push protection in repository security settings.
+- Require the `Gitleaks` status check on protected branches. The workflow scans pushes and pull requests; it does not block direct pushes by itself.
 
-## If sensitive data is exposed
+## 4. Pre-publish checklist
 
-Treat an exposed credential as compromised and rotate or revoke it immediately. Removing a file in a later commit is not enough: remove exposed content from Git history using an approved history-rewrite procedure, coordinate any force-push, and review audit logs for credential use. Notify repository owners and assess cached copies and forks.
+Do not publish until each item is reviewed:
+
+- [ ] No real secrets, tokens, connection strings, tenant IDs, personal data, or organization-specific values appear in text, scripts, templates, or filenames.
+- [ ] Screenshots are cropped as needed, solid-masked, flattened, stripped of metadata, and manually reviewed.
+- [ ] The Gitleaks workflow passes, and a scoped identifier review is complete.
+- [ ] Staged files contain only intended content. A clean working-tree scan does not inspect prior Git history.
+- [ ] Git history has been reviewed; deleted secrets remain in history.
+
+## 5. If sensitive data is exposed
+
+Treat any exposed credential as compromised:
+
+1. Revoke or rotate it immediately.
+2. Notify repository owners and review audit logs for credential use.
+3. Remove the exposed content from Git history using an approved history-rewrite procedure. Deleting the file in a later commit is not sufficient.
+4. Coordinate any force-push with collaborators, then assess cached copies and forks.
